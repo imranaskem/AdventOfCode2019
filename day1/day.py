@@ -1,5 +1,4 @@
-import math
-import fuelcalc
+from day1 import fuelcalc
 
 file = open("input.txt")
 inputs = []

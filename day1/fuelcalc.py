@@ -13,6 +13,7 @@ def processMass(mass):
 
     while massFuel > 0:
         massFuel = calculateFuel(massFuel)
-        totalMassFuel += massFuel
+        if massFuel > 0:
+            totalMassFuel += massFuel
 
     return totalMassFuel
