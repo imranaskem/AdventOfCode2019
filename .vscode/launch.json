@@ -5,21 +5,11 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": ".NET Core Launch (console)",
-            "type": "coreclr",
+            "name": "Python: Current File",
+            "type": "python",
             "request": "launch",
-            "preLaunchTask": "build",
-            "program": "${workspaceFolder}/AdventOfCode2019/bin/Debug/netcoreapp3.0/AdventOfCode2019.dll",
-            "args": [],
-            "cwd": "${workspaceFolder}/AdventOfCode2019",
-            "console": "internalConsole",
-            "stopAtEntry": false
-        },
-        {
-            "name": ".NET Core Attach",
-            "type": "coreclr",
-            "request": "attach",
-            "processId": "${command:pickProcess}"
+            "program": "${file}",
+            "console": "integratedTerminal"
         }
     ]
 }
