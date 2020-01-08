@@ -1,9 +1,12 @@
 import math
+import utils
+
 
 def calculateFuel(input):
     rounded = math.floor(input / 3)
 
     return (rounded - 2)
+
 
 def processMass(mass):
     totalMassFuel = 0
@@ -17,3 +20,14 @@ def processMass(mass):
             totalMassFuel += massFuel
 
     return totalMassFuel
+
+
+inputs = utils.loadfile("inputs/day01.txt", __file__)
+
+totalFuel = 0
+
+for input in inputs:
+    moduleFuel = processMass(input)
+    totalFuel += moduleFuel
+
+print(totalFuel)
