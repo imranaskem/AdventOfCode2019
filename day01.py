@@ -22,7 +22,7 @@ def processMass(mass):
     return totalMassFuel
 
 
-inputs = utils.loadfile("inputs/day01.txt", __file__)
+inputs = utils.load_text_file("inputs/day01.txt", __file__)
 
 totalFuel = 0
 
